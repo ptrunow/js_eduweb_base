@@ -1,4 +1,4 @@
-/* TYPY DANYCH I OPERATORY */
+/* *********************************  TYPY DANYCH I OPERATORY  ********************************* */
 
 
 
@@ -206,7 +206,7 @@ if(!name) {
 */
 
 
-
+/*
 
 // 9. Inkrementacja i dekrementacja
 
@@ -221,6 +221,109 @@ console.log(++number1);
 //console.log(number2--);
 //console.log(--number2);
 console.log(number2 - 1);
+
+*/
+
+
+
+
+/* *********************************  INSTRUKCJE WARUNKOWE  ********************************* */
+
+
+/*
+// 2. Instrukcja if - jeżeli
+
+	// var firstName = '';
+
+	// if(firstName !== '') {
+	// 	console.log('Cześć ' + firstName);
+	// } else {
+	// 	console.log('Cześć, Nieznajomy');
+	// }
+
+var number = 40;
+
+if(number < 30) {
+	console.log('Liczba jest mniejsza od 30');
+} else if(number > 10) {
+	console.log('Liczba jest większa od 10');
+} else {
+	console.log('Liczba nie jest ani mniejsza od 30 ani większa od 10');
+}
+*/
+
+
+
+/*
+// 3. Skrócony zapis if
+
+ var firstName = '';
+ var userName;
+
+
+	// if(firstName) {
+	// 	userName = firstName;
+	// } else {
+	// 	userName = 'Nieznajomy';
+	// }
+
+
+userName = firstName ? firstName : 'Nieznajomy';
+
+
+ console.log('Witaj, ' + userName);
+
+*/
+
+
+
+
+// 4. Instrukcja switch
+
+var number = 4;
+
+var word = '';
+
+	// if(number === 1) {
+	// 	word = 'jeden';
+	// } else if(number === 2) {
+	// 	word = 'dwa';
+	// } else if(number === 3) {
+	// 	word = 'trzy';
+	// } else {
+	// 	word = 'Wartość nieznana';
+	// }
+
+switch(number) {
+	case 1:
+		word = 'Jeden';
+		break;
+	case 2:
+		word = 'dwa';
+		break;
+	case 3:
+		word = 'trzy';
+		break;
+	default:
+		word = 'Wartość nieznana';
+}
+
+
+console.log('Wartość to ' + word + '.');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
