@@ -273,11 +273,11 @@ userName = firstName ? firstName : 'Nieznajomy';
 
  console.log('Witaj, ' + userName);
 
-*/
+ */
 
 
 
-
+/*
 // 4. Instrukcja switch
 
 var number = 4;
@@ -310,6 +310,157 @@ switch(number) {
 
 
 console.log('Wartość to ' + word + '.');
+*/
+
+
+
+
+
+/* *********************************  PĘTLE  ********************************* */
+
+/*
+// 2. Pętla while
+
+	// var number = 10;
+
+	// while(number > 0) {
+	// 	console.log(number);
+	// 	number--;
+	// }
+
+var secretNumber = 2;
+
+while(prompt('Podaj liczbę') != secretNumber) {
+	alert("Nie trafiłeś!");
+}
+
+alert('Brawo!');
+*/
+
+
+
+
+// 3. Pętla do while - wykonuje kod a następnie sprawdza warunek
+
+/*
+var number = 20;
+
+
+do {
+	console.log(number);
+	number++
+} while(number > 30);
+*/
+
+
+
+// 4. Pętla for 
+
+/*
+for(var i = 0; i <=10; i++) {
+	console.log(i);
+}
+
+*/
+
+
+/*
+// 4. Pętla for in
+
+var person = {
+	'Imię': 'Maciej',
+	'Nazwisko': 'Kowalski',
+	'Wiek': 32
+};
+
+var person2 = {};
+
+
+// for(var key in person) {
+// 	console.log(key + ': ' + person[key]);
+// }
+
+
+
+for(var key in person) {
+	person2[key] = person[key];
+}
+
+console.log(person2);
+*/
+
+
+
+
+// 5. Przerywanie lub kontynuacja pętli
+
+// for(var i = 0; i <= 20; i++) {
+
+// 	if( (i % 2) === 0 ){
+// 		console.log(i);
+// 	}
+
+// }
+
+
+// for(var i = 0; i <= 20; i++) {
+
+// 	if( (i % 2) === 0 ){
+// 		continue;
+
+// 	}
+
+// 		console.log(i);	
+// }
+
+
+var numbers = [2, 3, 6, 20, 0, 52, 11];
+
+var containsZero = false;
+
+
+
+for(var i = 0; i < numbers.length; i++) {
+
+	console.log(numbers[i]);
+
+	if(numbers[i] === 0) {
+		containsZero = true;
+		break;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
