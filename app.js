@@ -391,7 +391,7 @@ console.log(person2);
 
 
 
-
+/*
 // 5. Przerywanie lub kontynuacja pętli
 
 // for(var i = 0; i <= 20; i++) {
@@ -430,68 +430,76 @@ for(var i = 0; i < numbers.length; i++) {
 	}
 }
 
+*/
 
 
 
 
 
 
+/* *********************************  OBIEKTY  ********************************* */
+
+
+// 2. Tworzenie obiektów i praca z właścowościami
+
+
+// var person = {
+
+// 	firstName: 'Tomasz',
+// 	lastName: 'Kowalski',
+// 	age: 32,
+
+// };
+
+// person.job = 'Programista';
+
+// delete person.age;
+
+// console.log(person);
+
+
+// var person2 = person;
+
+// person2.age = 23;
 
 
 
 
 
+// 2. Funkcje jako metody obiektów
+
+// var person = {
+// 	firstName: 'Maciej',
+// 	lastName: 'Kowalski',
+// 	sayHello: function() {
+// 		console.log('Cześć, mam na imię ' + this.firstName);
+// 	},
+// 	setFirstName: function(firstName) {
+// 		this.firstName = firstName;
+// 	}
+// };
 
 
 
 
 
+// 3. Porównywanie obiektów
+
+var person = {
+ 	firstName: 'Maciej',
+ 	lastName: 'Kowalski'
+ };
 
 
+var person2 = {
+ 	firstName: 'Maciej',
+ 	lastName: 'Kowalski'
+ };
 
 
+var person3 = person2;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(person === person2);
 
 
