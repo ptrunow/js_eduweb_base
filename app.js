@@ -1,10 +1,5 @@
 /* *********************************  TYPY DANYCH I OPERATORY  ********************************* */
 
-
-
-
-
-
 /* 
 // 2. Tworzenie zmiennych
 
@@ -229,7 +224,6 @@ console.log(number2 - 1);
 
 /* *********************************  INSTRUKCJE WARUNKOWE  ********************************* */
 
-
 /*
 // 2. Instrukcja if - jeżeli
 
@@ -439,50 +433,49 @@ for(var i = 0; i < numbers.length; i++) {
 
 /* *********************************  OBIEKTY  ********************************* */
 
-
+/*
 // 2. Tworzenie obiektów i praca z właścowościami
 
+var person = {
 
-// var person = {
+	firstName: 'Tomasz',
+	lastName: 'Kowalski',
+	age: 32,
 
-// 	firstName: 'Tomasz',
-// 	lastName: 'Kowalski',
-// 	age: 32,
+};
 
-// };
+person.job = 'Programista';
 
-// person.job = 'Programista';
+delete person.age;
 
-// delete person.age;
-
-// console.log(person);
-
-
-// var person2 = person;
-
-// person2.age = 23;
+console.log(person);
 
 
+var person2 = person;
+
+person2.age = 23;
+*/
 
 
 
+/*
 // 2. Funkcje jako metody obiektów
 
-// var person = {
-// 	firstName: 'Maciej',
-// 	lastName: 'Kowalski',
-// 	sayHello: function() {
-// 		console.log('Cześć, mam na imię ' + this.firstName);
-// 	},
-// 	setFirstName: function(firstName) {
-// 		this.firstName = firstName;
-// 	}
-// };
+var person = {
+	firstName: 'Maciej',
+	lastName: 'Kowalski',
+	sayHello: function() {
+		console.log('Cześć, mam na imię ' + this.firstName);
+	},
+	setFirstName: function(firstName) {
+		this.firstName = firstName;
+	}
+};
+*/
 
 
 
-
-
+/*
 // 3. Porównywanie obiektów
 
 var person = {
@@ -497,9 +490,246 @@ var person2 = {
  };
 
 
-var person3 = person2;
+ var person3 = person2;
 
 
-console.log(person === person2);
+ console.log(person === person2);
+ */
+
+
+
+
+
+
+ /* *********************************  TABLICE  ********************************* */
+
+/*
+// 2. Tworzenie tablic jedno i wielowymiarowych
+
+var numbers = [1, 3, 4, 5];
+
+
+console.log (numbers[2]);
+
+console.log (numbers.length);
+
+
+var things = [{firstName: 'Anna'}, 2, 2 + 8];
+
+
+var arrays = [[2, 3, 4], [4, 2, 1, ['Jan']]];
+*/
+
+
+
+
+/*
+// 3. Dodawanie elementów do tablicy
+
+var arr = [];
+
+
+arr[0] = 'Kasia';
+arr[1] = 'Tomek';
+
+arr[arr.length] = 'Piotrek';
+
+arr.push('Monika');
+
+arr.unshift('Patryk');
+
+
+
+console.log(arr.length);
+*/
+
+
+
+
+/*
+// 4. Usuwanie elementów tablicy
+
+
+var arr = ['Tomek', 'Ania', 'Jacek', 'Mariusz'];
+
+console.log(arr.length);
+
+arr.length = 2;
+*/
+
+
+
+
+/*
+// 5. Sortowanie elementów tablicy
+
+var arr = [5, 8, 1, 2, 1, 33, 23, 18, 4],
+	arr2 = ['anita', 'Tomek', 'Ania', 'Andrzej', 'Mateusz', 'Kasia'];
+
+
+
+
+console.log(arr);
+
+arr.sort(function(a, b) {
+
+	return a - b;
+
+	// if(a < b) {
+	// 	return -1;
+	// } else if(a > b) {
+	// 	return 1;
+	// } else {
+	// 	return 0;
+	// }
+});
+
+console.log(arr);
+
+
+
+
+console.log(arr2);
+
+arr2.sort(function(a, b){
+
+	if(a < b) {
+		return -1;
+	} else if(a > b) {
+		return 1;
+	} else {
+		return 0;
+	}
+
+});
+*/
+
+
+
+
+/*
+// 6. Używanie pętli na tablicach
+
+
+// var numbers = [2, 3, 17, 32, 28, 9],
+// 	text = "Wylosowane liczby to: ";
+// var arrLength = numbers.length;
+
+
+// for(var i = 0; i < arrLength; i++) {
+
+// 	text += numbers[i];
+
+// 	if(i !== arrLength - 1) {
+// 		text += ', ';
+// 	}
+
+// }
+
+//console.log(text);
+
+
+
+
+var arr = [['Tomasz', 'Kowalski', 23], ['Maria', 'Nowak', 30], ['Jacek', 'Zielinski', 38]];
+
+
+for(var i = 0; i < arr.length; i++){
+
+	console.log('DANE');
+
+
+	for(var j = 0; j < arr[i].length; j++) {
+
+		console.log(arr[i][j]);
+
+	}
+
+
+	console.log('---------------');
+}
+
+*/
+
+/*
+// 7. Metody tablic
+
+var arr = [2, 3, 17, 32, 28, 9, 67, 36, 1, 98];
+
+	console.log(arr);
+
+
+var half = arr.slice(4, 7);
+
+//	console.log(half);
+
+// console.log(arr.join(", "));
+
+
+// console.log(arr.indexOf(101) !== -1);
+
+
+//console.log(arr.concat(half));
+
+
+arr.forEach(function(value, index, array) {
+
+	//console.log(value);
+
+});
+
+var gt10 = arr.filter(function(value) {
+
+	return value > 10;
+
+});
+
+//console.log(gt10);
+
+
+var negativ = arr.map(function(value){
+
+	return value * -1;
+
+});
+
+
+console.log(negativ);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
