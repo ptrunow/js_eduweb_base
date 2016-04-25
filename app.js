@@ -703,33 +703,236 @@ console.log(negativ);
 
 
 
+/* *********************************  FUNKCJE ********************************* */
+
+/*
+// 2. Tworzenie funkcji
+
+var text = 'Cześć';
+
+sayHello();
+
+
+function sayHello(){
+
+	console.log(text);
+
+	console.log('Witaj!');
+
+}
+
+//sayHello();
+
+
+
+
+
+var sayHello2 = function(){
+
+	console.log('Cześć!');
+
+};
+
+
+
+
+var sayHello3 = function hello() {
+
+	console.log(hello);
+
+	console.log('Siema');
+
+}
+*/
+
+
+
+/*
+// 3. Zwracanie wartości
+
+function sayHello() {
+
+	return 'Witaj, ';
+
+}
+
+var hello = sayHello();
+
+
+
+function makeArray() {
+
+	var arr = [1, 2, 3]
+
+	return arr;
+}
+
+
+function hi() {
+
+	if(3 < 1) {
+		return false;
+	}
+
+	console.log('Cześć');
+}
+*/
+
+
+
+/*
+// 4. Parametry funkcji
+
+
+function square(num){
+
+	return num * num;
+}
 
 
 
 
 
 
+var firstName = 'Tomasz';
+
+var person = {
+	firstName: 'Tomasz',
+	lastName: 'Kowalski'
+};
+
+
+
+function sayHello(obj){
+
+	obj.firstName = 'Piotr';
+
+	return "witaj, " + obj.firstName + ' ' + obj.lastName;
+
+}
+
+
+console.log(sayHello(person));
+
+*/
+
+
+/*
+// 5. Zakres zmiennych
+
+function init() {
+
+	var firstName = 'Maciej';
+
+
+	function sayHello(text) {
+
+		var lastName = 'Kowalski';
+
+		console.log('Cześć ' + firstName + ' ' + lastName);
+	}
+
+
+}
+
+init();
+
+
+*/
+
+/*
+// 6. Zmienna arguments
+
+
+function sum1(num1, num2){
+
+	if(arguments.length === 2 && typeof num1 === 'number' && typeof num2 === 'number') {
+
+		return num1 + num2;
+
+	} else {
+
+		return 'Podaj poprawne argumenty';
+	}
+
+}
+
+
+//console.log( sum(2, 894) );
+
+
+function sum() {
+
+	var total = 0;
+
+	for(var i = 0; i < arguments.length; i++) {
+
+		total += arguments[i];
+	}
+
+	return total;
+}
+
+
+console.log( sum(2, 3, 4, 5) );
+
+*/
+
+
+/*
+// 7. Funkcje anonimowe
+
+
+(function() {
+
+	var arr = [1, 45, 22, 31, 3];
+
+		arr.sort(function(a, b) {
+
+			return a - b;
+		});
 
 
 
 
+		function sayHello(text, getName) {
+
+			var result = text + getName();
+
+			return result;
+
+		}
+
+
+		console.log( sayHello('Witaj, ', function() {
+
+			return 'Piotr';
+
+		}) );
+
+
+	})();
+
+*/
+
+
+/*
+// 9. Wbudowane funkcje JavaScript
+
+
+//eval('alert("Witaj");');
+
+//console.log( isFinite(-Infinity) );
+
+//console.log( isNaN( 2 * undefined) );
+
+//console.log( parseFloat('20.6') );
+
+//console.log( parseInt('20 zł') );
 
 
 
+//alert('Witaj');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
