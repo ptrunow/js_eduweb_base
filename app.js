@@ -936,3 +936,235 @@ console.log( sum(2, 3, 4, 5) );
 
 */
 
+
+
+ /* *********************************  WBUDOWANE OBIEKTY JAVASCRIPT  ********************************* */
+
+
+/*
+// 1. Obiekt String
+
+var n = 'Ania';
+
+var n1 = new String('Ania');
+
+var n2 = String(32);
+
+
+// console.log( typeof n2 );
+
+// console.log( n.length );
+
+
+console.log( n.length );
+
+console.log( n[1] );
+
+console.log( n.charAT(1) );
+
+console.log( n.indexOf('Anna') );
+
+console.log( n.replace('nia', 'nna') );
+
+console.log( n.slice(0, 2) );
+
+console.log( n.substr(0, 2) );
+
+console.log( n.split(' ') );
+
+console.log( n.toLowerCase() );
+
+console.log( n.toUpperCase );
+
+*/
+
+
+
+
+/*
+// 2. Obiekt Number
+
+var number = 23;
+
+var number2 = Number('23');
+
+console.log( number2 );
+
+// console.log( Number.MAX_VALUE );
+// console.log( Number.MIN_VALUE );
+// console.log( Number.NaN );
+// console.log( Number.NEGATIVE_INFINITY );
+// console.log( Number.POSITIVE_INFINITY );
+
+
+console.log( Infinity === Number.POSITIVE_INFINITY );
+
+
+console.log( number.toString(16) );
+
+console.log( number.toFixed(2) );
+
+*/
+
+
+
+
+/*
+// 3. Obiekt Boolean
+
+var b = Boolean('');
+
+
+console.log( b.valueOf() );
+
+*/
+
+
+
+
+
+/*
+// 4. Obiekt Array
+
+var arr = [];
+
+var arr1 = new Array(1, 2);
+*/
+
+
+
+
+/*
+// 3. Obiekt Function
+
+function sayHello(firstName, lastName) {
+
+	return firstName + ' ' + lastName;
+
+}
+
+
+//var f = new Function ('firstName', 'lastName', "return firstName + ' ' + lastName;");
+
+
+function f(firstName, lastName) {
+
+	arguments.callee.counter = arguments.callee.counter ? arguments.callee.counter : 1;
+
+	return firstName + ' ' + lastName + ', funkcja wywołana po raz ' + arguments.callee.countner++; 
+
+};
+
+
+console.log( f.length );
+*/
+
+
+
+
+/*
+// 6. Obiekt Math
+
+//console.log(Math);
+
+//console.log( Math.abs(-22.1) );
+
+//console.log( Math.round(22.5234) );
+
+//console.log( Math.ceil(22.02) );
+
+//console.log( Math.floor(42.89) );
+
+//console.log( Math.max(3, 5, 1, 6, 0) );
+
+//console.log( Math.min(33, 123, 5, 10) );
+
+//console.log( Math.round( Math.random() * 10 ) );
+*/
+
+
+
+/*
+// 7. Obiekt Date
+
+var d = new Date();
+
+var d2 = new Date(123142744756354);
+
+var d3 = new Date(2015, 0, 16, 12, 35, 55);
+
+
+
+// console.log( d3.getFullYear() ); // rok
+
+// console.log( d3.getMonth() ); // miesiąc
+
+// console.log( d3.getDate() ); // dzień
+
+// console.log( d3.getHours() ); // godzina
+
+// console.log( d3.getMinutes() ); // minuty
+
+// console.log( d3.getMilliseconds() ); // ms
+
+// console.log( d3.getDay() ); // dzień tygodnia
+
+// console.log( d3.getTime() ); //   
+
+
+console.log( d3.toString() );
+console.log( d3.toLocaleString() );
+
+console.log ( d3.getDate() + '.' + ( d3.getMonth() + 1) + '.' + d3.getFullYear() );
+
+
+
+d3.setFullYear(2020);
+console.log( d3.getFullYear() );
+
+
+var d4 = new Date('Fri Jan 16 2015 12:35:55 GMT+0100 (CET)');
+
+*/
+
+
+/*
+// 8. Obiekt RegExp
+
+
+// var regex = /a+/gi;
+
+var regex = new RegExp('a+', 'ig');
+
+var n = 'Ania';
+
+console.log( n.replace(regex, 'p') );
+
+console.log( regex.test('Ania') );
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
