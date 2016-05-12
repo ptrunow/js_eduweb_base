@@ -1146,6 +1146,104 @@ console.log( regex.test('Ania') );
 
 
 
+ /* *********************************  OBSŁUGA WYJĄTKÓW  ********************************* */
+
+/*
+// 1. Blok try catch
+
+function searchDb() {
+
+	console.log('Otwieram połączenie')
+
+	db.search();
+
+	console.log('Zamykam połączenie')
+
+}
+
+try {
+
+	searchDb();
+
+} catch(e) {
+
+	console.dir(e);
+
+} finally {
+
+	console.log('Zamykam połaczenie');
+
+}
+*/
+
+/*
+// 2. Zgłaszanie własnych błędów
+
+function getData() {
+
+	if(!type) {
+		throw new Error('Nieprawidłowy typ');
+	}
+
+	return {
+		firstName: 'Jan',
+		lastName: 'Kowalski'
+	};
+}
+
+
+
+function searchDb() {
+
+	console.log('Otwieram połączenie.');
+
+	console.log('Pobieram dane.');
+
+	var data = getData();
+
+	if(data === null) {
+
+		throw new Error('Brak danych');
+	}
+
+	console.log('Zamykam połączenie.');
+
+}
+
+try {
+
+	searchDb();
+
+} catch(e) {
+
+	console.log('Wystąpił błąd: ' + e.message);
+
+} finally {
+
+	console.log('Zamykam połaczenie.');
+
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
