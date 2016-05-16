@@ -1230,6 +1230,141 @@ try {
 
 
 
+/* *********************************  OBIEKTOWY MODEL DOKUMENTU ********************************* */
+
+
+
+/* *********************************  OBIEKT WINDOW ********************************* */
+
+/*
+//1. Globalny obiekt window
+
+
+//console.log(window);
+
+function sayHello() {
+
+
+	//window.message = 'Cześć!';
+	message = 'Cześć!';
+	
+
+	//alert(message);
+	//var con = confirm('czy wyrażasz zgodę?');
+	var ans = prompt('Jak masz na imię?', 'Podaj swoje imię')
+
+	console.log(ans);
+}
+
+
+
+sayHello();
+
+
+console.log(message);
+*/
+
+/*
+//2. Obiekt navigator
+
+
+var isChrome = navigator.userAgent.match(/chrome/i);
+
+
+console.log('Nazwa aplikacji: ' + navigator.appName);
+console.log('Wersja aplikacji: ' + navigator.appVersion);
+console.log('Ciąg User-Agent: ' + navigator.userAgent);
+console.log('Platforma systemowa: ' + navigator.platform);
+console.log('Język przeglądarki: ' + navigator.language);
+console.log('Status online: ' + navigator.onLine);
+
+*/
+
+/*
+//3. Obiekt screen
+
+console.log('Rozdzielczość ekranu: ' + screen.width + 'x' + screen.height + 'px');
+console.log('Maksymalna dostępna szerokość: ' + screen.availWidth + 'px');
+console.log('Maksymalna dostępna wysokość: ' + screen.availHeight + 'px');
+console.log('Głębia kolorów ekranu: ' + screen.colorDepth);
+*/
+
+/*
+//3. Obiekt location
+
+console.log(window.location);
+*/
+
+
+//4. setTimeout i setInterval
+
+// setTimeout(function() {
+
+// 	 console.log('Witaj po 2 sekundach!');
+
+// }, 2000);
+
+// var timeout = setTimeout(function() {
+
+// 	 console.log('Witaj po 2 sekundach!');
+
+// }, 5000);
+
+//clearTimeout(timeout);
+
+
+var counter = 0,
+	clock = null;
+
+function tick(){
+
+	if (counter <= 5){
+		console.log(counter++);
+	} else {
+		clearInterval(clock);
+	}
+
+}
+
+
+//clock = setInterval(tick, 1000);
+
+
+counter = 0;
+
+function tock() {
+
+	if(counter <=5) {
+		console.log(counter++);
+		setTimeout(tock, 100);
+	}
+
+}
+
+tock();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
