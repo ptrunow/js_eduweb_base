@@ -1264,6 +1264,8 @@ sayHello();
 console.log(message);
 */
 
+
+
 /*
 //2. Obiekt navigator
 
@@ -1279,6 +1281,8 @@ console.log('Język przeglądarki: ' + navigator.language);
 console.log('Status online: ' + navigator.onLine);
 
 */
+
+
 
 /*
 //3. Obiekt screen
@@ -1296,6 +1300,9 @@ console.log(window.location);
 */
 
 
+
+
+/*
 //4. setTimeout i setInterval
 
 // setTimeout(function() {
@@ -1343,7 +1350,7 @@ function tock() {
 
 tock();
 
-
+*/
 
 
 
