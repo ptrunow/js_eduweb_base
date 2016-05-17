@@ -1355,15 +1355,43 @@ tock();
 
 
 
+/* *********************************  WYSZUKIWANIE ELEMENTÓW NA STRONIE ********************************* */
+
+/*
+//1. Metody przeszukiwania drzewa DOM
+
+var container = document.getElementById('container');
+
+
+var firstName = document.getElementByName('firstName')[0];
+
+
+var paragraphs = document.getElementByTagName('p');
+
+
+var texts = document.getElementByClassName('text');
+
+
+var h1 = document.querySelector('h1');
+
+
+var form = document.querySelector('#myForm');
+var submit = form.querySelector("button[type = 'submit']");
+
+
+var links = document.querySelectorAll('a');
 
 
 
+document.all;
+document.forms;
+document.images;
+document.links;
 
 
 
-
-
-
+var firstForm = document.forms[0];
+*/
 
 
 
