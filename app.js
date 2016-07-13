@@ -1395,17 +1395,166 @@ var firstForm = document.forms[0];
 
 
 
+/* *********************************  TWORZENIE NOWYCH ELEMENTÓW HTML ********************************* */
+
+/*
+//1. Tworzenie elementów HTML
+
+
+var div = document.createElement("<div>");
+
+var img = new Image();
+
+var text = document.createTextNode('treść');
+
+*/
+
+/*
+//2. Wstawianie i usuwanie elementów ze strony
+
+var list1 = document.querySelector('#list1'),
+	list2 = document.querySelector('#list2');
+
+var li = document.createElement('li'),
+	text = document.createTextNode('treść');
+
+
+li.appendChild(text);
+
+// list1.appendChild(li);
+
+// list1.insertBefore(li, list1.querySelector('li:nth-child(2)'));
+
+// list1.appendChild(list1.querySelector('li:first-child'));
+
+//list2.removeChild(list2.querySelector(':last-child'));
+
+list1.replaceChild(li, list1.querySelector(':last-child'));
+*/
+
+/*
+//3. Tworzenie fragmentu dokumentu
+
+var list = document.getElementById('list');
+
+// for(var i=0; i <=5; i++){
+
+// 	var li = document.createElement('li');
+
+// 	li.appendChild(document.createTextNode('Nowy elem listy ' + i));
+
+// 	list.appendChild(li);
+
+// }
+
+
+var dc = document.createDocumentFragment();
+
+for(var i=0; i <=5; i++){
+
+	var li = document.createElement('li');
+
+	li.appendChild(document.createTextNode('Nowy elem listy ' + i));
+
+	dc.appendChild(li);
+}
+
+list.appendChild(dc);
+*/
+
+/*
+//4. Relacje między dokumentami
+
+
+var list = document.querySelector('#list');
+
+
+var children = list.childNodes;
+var elementChildren = list.children;
+
+
+var first = list.firstChild;
+var firstElement = list.firstElementChild;
+
+
+var last = last.lastChild;
+var lastElement = list.lastElementChild;
+
+
+var second = firstElement.nextSibling;
+var lastButOneElement = lastElement.previousElementSibling;
+
+
+var parent = second.parentNode;
+
+
+secondElement.parentNode.removeChild(secondElement);
+
+*/
+
+
+/*
+//5. Praca z atrybutami
+
+
+var link = document.querySelector('.link'),
+	href = link.getAttribute('href');
 
 
 
+link.setAttribute('href', 'http://eduweb.pl');
+
+link.removeAttribute('class');
 
 
 
+var button = document.querySelector('button');
+
+button.setAttribute('disabled', true);
+button.removeAttribute('disabled');
 
 
 
+var img = document.createElement('img');
+
+img.src = 'http://www.noordinaryhomestead.com/wp-content/uploads/2011/09/ayla-wanna-play.jpg';
+
+document.body.appendChild(img);
 
 
+
+var attrs = img.attributes;
+*/
+
+/*
+//5. Praca z klasami CSS
+
+var link = document.querySelector('.link');
+
+console.log ( link.className );
+
+
+link.classList.add('red', 'green');
+
+link.classList.remove('green');
+
+link.classList.toggle('green'); 
+
+
+console.log(link.classList.contains('red'));
+*/
+
+/*
+//5. Inne własciwości elementów
+
+var list = document.querySelector('#list');
+
+var first = list.firstChild;
+
+var firstElement = list.firstElementChild;
+
+var last = last.lastChild;
+*/
 
 
 
