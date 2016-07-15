@@ -1,80 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-	<title></title>
-	<meta charset='UTF-8'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Przykład 59 - Wartości pól formularza</title>
+
+    <style>
+        form div {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
-
 <body>
 
-	<header id="NAGLOWEK">Nagłówek szablonu</header>
+    <h1>Przykład 59 - Wartości pól formularza</h1>
 
-	<nav id="MENU">Menu nawigacyjne</nav>
+    <form action="#" id="myForm">
+        <div>
+            <input type="text" name="firstName" value="Jan">
+        </div>
 
-	<h1>Przykład któryśtamznowu</h1>
+        <div>
+            <input type="text" name="lastName">
+        </div>
 
-	<!-- komentarz -->
+        <div>
+            <select name="subject">
+                <option value="pytanie">Pytanie</option>
+                <option value="prosba">Prośba</option>
+                <option value="zgloszenie">Zgłoszenie</option>
+            </select>
+        </div>
 
-	<a href="#" class="link">Przejdź do strony głównej</a>
+        <div>
+            <textarea name="message"></textarea>
+        </div>
 
-	<div>
-		<button>Kliknij mnie!</button>
-	</div>
-	
-	<ul id="list">
-		<li>Elem listy 1.1</li>
-		<li>Elem listy 1.2</li>
-		<li>Elem listy 1.3</li>
-		<li>Elem listy 1.4</li>
-		<li>Elem listy 1.5</li>
-	</ul>
+        <div>
+            <label>Zapamiętaj mnie</label>
+            <input type="checkbox" name="remember" value="1">
+        </div>
 
+        <div>
+            <input type="submit" value="Wyślij">
+        </div>
+    </form>
 
-	<ul id="list1">
-		<li>Elem listy 1.1</li>
-		<li>Elem listy 1.2</li>
-		<li>Elem listy 1.3</li>
-		<li>Elem listy 1.4</li>
-		<li>Elem listy 1.5</li>
-	</ul>
-
-	<ul id="list2">
-		<li>Elem listy 1.1</li>
-		<li>Elem listy 1.2</li>
-		<li>Elem listy 1.3</li>
-	</ul>
-
-
-	<style>
-		.link {
-			text-decoration: none;
-		}
-
-		.red {
-			color: red;
-		}
-
-		.green {
-			color: green;
-		}
-		
-	</style>
-
-
-
-
-
-	<aside id="INFORMACJE">Dodatkowe informacje</aside>
-
-	<article id="TRESC">Treść strony</article>
-
-	<footer id="STOPKA">Stopka serwisu</footer>
-
-
-	<script src="app.js"></script>
+<script src="app.js"></script>
 </body>
-
-
 </html>
+
+
+
+

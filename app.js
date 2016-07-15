@@ -1558,6 +1558,74 @@ var last = last.lastChild;
 
 
 
+/* *********************************  PRACA Z TREŚCIĄ ELEMENTÓW HTML ********************************* */
+
+/*
+//1. innerHTML, outerHTML oraz textContent
+
+var container = document.querySelector('#container'),
+para = document.querySelector('#container p');
+
+// console.log( container.innerHTML );
+
+// console.log( para.textContent ); 
+
+
+
+// //para.innerHTML = '<b>nowa treść</b>';
+
+para.textContent = 'Nowa treść';
+
+
+console.log(container.outerHTML);
+
+container.outerHTML = "<div id='container'><p>Treść</p></div>";
+
+container.id = 'container2';
+
+document.body.appendChild(container);
+*/
+
+/*
+//2. Wartości pól formularza
+
+var form = document.querySelector('#myForm');
+
+
+console.log( form.firstName.value );
+
+console.log( form.lastName.value );
+
+
+form.lastName.value = 'Kowalski';
+
+form.message.value = 'Treść';
+
+console.log(form.subject.value);
+
+
+
+form.subject.length = 2;
+
+console.log( form.remember.checked );
+
+console.log(form.querySelector("input[type='submit']").value);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
