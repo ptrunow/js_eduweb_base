@@ -1615,6 +1615,60 @@ console.log(form.querySelector("input[type='submit']").value);
 
 
 
+/* *********************************  MANIPULACJA ZE STYLAMI CSS ELEMENTÓW ********************************* */
+
+/*
+//1. Praca ze stylami CSS elementów
+
+var h1 = document.querySelector('h1'),
+	
+	container = document.querySelector('#container'),
+
+	p = container.querySelector('p'),
+
+	link = container.querySelector('a');
+
+
+
+h1.style.color = '#ff0000';
+h1.style.fontSize = '20px';
+
+
+container.style.cssText = 'width: 600px; margin: 0 auto;';
+
+
+for(var i = 0; i < p.length; i++) {
+
+	p[i].style.lineHeight = '30px';
+
+}
+
+
+link.style.display = 'block';
+
+
+//console.log(parseInt(container.style.width));
+
+
+console.log(window.getComputedStyle(h1).display);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
