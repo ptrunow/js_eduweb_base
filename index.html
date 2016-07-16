@@ -1,20 +1,83 @@
+
+<!-- 61
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Przykład 60 - Praca ze stylami CSS elementów</title>
+    <title>Przykład 61 - Współrzędne położenia elementu</title>
+
+    <style>
+        #container {
+            width: 600px;
+            height: 600px;
+            margin: 0 auto;
+            border: 2px #000 solid;
+            position: relative;
+        }
+
+        #container .box {
+            width: 200px;
+            height: 200px;
+            margin: 30px 0 0 20px;
+            background-color: #FF5400;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Przykład 60 - Praca ze stylami CSS elementów</h1>
+    <h1>Przykład 61 - Współrzędne położenia elementu</h1>
 
     <div id="container">
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, impedit dolore ducimus, eligendi repudiandae, modi saepe tempore rem dolor deleniti perferendis itaque? Ipsum inventore ex, nulla odio dolore quae expedita.</p>
+        <div class="box"></div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, rem!</p>
+    </div>
 
-        <a href="#">Link</a>
+<script src="app.js"></script>
+</body>
+</html>
+-->
+
+
+
+<!-- 62
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przykład 62 - Wymiary elementu</title>
+
+    <style>
+        #container {
+            width: 600px;
+            height: 600px;
+            padding: 30px;
+            margin: 0 auto;
+            border: 2px #000 solid;
+        }
+
+        #container .box {
+            width: 200px;
+            height: 200px;
+            margin: 30px 0 50px 20px;
+            overflow: auto;
+            background-color: #FF5400;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Przykład 62 - Wymiary elementu</h1>
+
+    <div id="container">
+
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aliquam doloremque esse odio beatae blanditiis voluptatibus, corporis suscipit voluptatum, voluptatem hic nihil unde, ab perspiciatis, vitae aliquid. Rem earum, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ducimus, nesciunt eaque iure quibusdam, placeat, ullam minima eveniet magnam iusto sed tenetur possimus officia. Laboriosam fugiat dolorum quo cumque sed?
+        </div>
+
+        <a href="#">Kliknij mnie</a>
 
     </div>
 
@@ -22,7 +85,55 @@
 </body>
 </html>
 
+-->
 
 
+
+<!-- 63 -->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przykład 63 - Pozycje suwaków</title>
+
+    <style>
+        #container {
+            width: 600px;
+            height: 600px;
+            padding: 30px;
+            margin: 0 auto;
+            border: 2px #000 solid;
+        }
+
+        #container .box {
+            width: 200px;
+            height: 200px;
+            margin: 30px 0 50px 20px;
+            overflow: auto;
+            background-color: #FF5400;
+        }
+
+        #container .box p {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Przykład 63 - Pozycje suwaków</h1>
+
+    <div id="container">
+
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque aliquam doloremque esse odio beatae blanditiis voluptatibus, corporis suscipit voluptatum, voluptatem hic nihil unde, ab perspiciatis, vitae aliquid. Rem earum, quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ducimus, nesciunt eaque iure quibusdam, placeat</p>
+            <p>llam minima eveniet magnam iusto sed tenetur possimus officia. Laboriosam fugiat dolorum quo cumque sed?</p>
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
 
 

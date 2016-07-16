@@ -1656,6 +1656,105 @@ console.log(window.getComputedStyle(h1).display);
 
 
 
+/* *********************************  GEOMETRIA ELEMENTÓW HTML ********************************* */
+
+/*
+//1. Współrzędne położenia elementu
+
+var container = document.querySelector('#container'),
+	box = container.querySelector('.box');
+
+
+console.log(box.offsetTop);
+
+console.log(box.offsetLeft);
+
+console.log(box.offsetParent);
+
+
+
+var pos = box.getBoundingClientRect();
+
+console.log(pos);
+
+
+
+console.log(document.elementFromPoint(400,200));
+
+
+*/
+
+
+/*
+//2. Wymiary elementu
+
+var container = document.querySelector('#container'),
+	box = container.querySelector('.box'),
+	link = container.querySelector('a');
+
+
+var containerDim = container.getBoundingClientRect();
+
+console.log(box.getBoundingClientRect().width);
+
+console.log(box.offsetWidth);
+
+
+console.log(container.clientWidth);
+
+console.log(container.clientHeight);
+
+
+
+console.log(box.scrollWidth);
+
+console.log(box.scrollHeight);
+
+
+
+console.log(link.offsetWidth);
+
+
+
+console.log(window.innerWidth);
+
+console.log(window.innerHeight);
+
+*/
+
+/*
+//3. Pozycje suwaków
+
+var container = document.querySelector('#container'),
+	box = container.querySelector('.box');
+
+
+
+console.log(box.scrollTop);
+
+console.log(box.scrollLeft);
+
+
+
+window.scrollTo(0, 200);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
