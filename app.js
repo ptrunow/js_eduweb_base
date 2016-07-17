@@ -913,7 +913,7 @@ console.log( sum(2, 3, 4, 5) );
 
 	})();
 
-*/
+	*/
 
 
 /*
@@ -938,7 +938,7 @@ console.log( sum(2, 3, 4, 5) );
 
 
 
- /* *********************************  WBUDOWANE OBIEKTY JAVASCRIPT  ********************************* */
+/* *********************************  WBUDOWANE OBIEKTY JAVASCRIPT  ********************************* */
 
 
 /*
@@ -1146,7 +1146,7 @@ console.log( regex.test('Ania') );
 
 
 
- /* *********************************  OBSŁUGA WYJĄTKÓW  ********************************* */
+/* *********************************  OBSŁUGA WYJĄTKÓW  ********************************* */
 
 /*
 // 1. Blok try catch
@@ -1739,6 +1739,243 @@ console.log(box.scrollLeft);
 window.scrollTo(0, 200);
 
 */
+
+
+
+/* *********************************  ZDARZENIA DOM ********************************* */
+
+
+//1. Czym są zadrzenia?
+
+/*
+//2. Przypisywanie i usuwanie zdarzeń dla elementów
+
+var btn2 = document.querySelector('#btn2'),
+btn3 = document.querySelector('#btn3');
+
+
+
+function sayHello() {
+
+	alert('Hej!');
+}
+
+
+
+btn2.onclick = sayHello;
+
+
+
+btn3.addEventListener('click', sayHello, false);
+btn3.addEventListener('click', function(){
+
+	alert('Witaj!');
+
+}, false);
+
+
+
+
+btn2.onclick = null;
+
+
+btn3.removeEventListener('click', sayHello, false);
+*/
+
+
+/*
+//3. Obiekt event i target
+
+var btn = document.querySelector('#btn');
+
+btn.onclick = function(e) {
+
+	console.log(this);
+
+	console.log(e.target);
+
+	e.target.setAttribute('disabled', true);
+
+};
+
+
+document.body.onclick = function(e) {
+
+	console.log(this);
+
+	console.log(e.target);
+
+}
+
+*/
+
+/*
+//4. Czym jest bubbling?
+
+var body = document.body,
+	btn = document.querySelector('#btn');
+
+
+body.addEventListener('click', function(e) {
+
+	console.log('Kliknąłeś w body');
+
+}, false);
+
+
+
+
+btn.addEventListener('click', function(e){
+
+	e.stopPropagation();
+	e.stopImmediatePropagation();
+
+	console.log('Kliknąłeś w przycisk');
+
+}, false);
+
+
+
+btn.addEventListener('click', function(e) {
+
+	console.log('znów kliknąłeś w przycisk');
+
+}, false);
+
+*/
+
+/*
+//4. Czym jest capturing?
+
+
+var body = document.body,
+	btn = document.querySelector('#btn');
+
+
+
+
+body.addEventListener('click', function(e) {
+
+	console.log(e.eventPhase);
+
+	console.log('Kliknąłeś w body');
+
+}, true);
+
+
+btn.addEventListener('click', function(e){
+
+	console.log(e.eventPhase);
+
+	console.log('Kliknąłeś w body ponownie');
+
+}, false);
+
+
+btn.addEventListener('click', function(e) {
+
+	console.log(e.eventPhase);
+
+	console.log('Klinkąłeś w przycisk');
+
+}, false);
+
+*/
+
+/*
+//5. Zapobieganie domyślnej akcji przeglądarki
+
+var form = document.querySelector('#myForm'),
+	link = document.querySelector('#showMessage');
+
+
+
+form.addEventListener('submit', function(e) {
+
+	if(this.firstName.value === "") {
+
+		e.preventDefault();
+		alert('Wpisz swoje imię');
+	} 
+
+}, false);
+
+
+
+form.querySelector('#firstName').addEventListener('keypress', function(e){
+
+	if(String.fromCharCode(e.charCode) === 'a') {
+
+		e.preventDefault();
+	}
+
+}, false);
+
+
+
+
+link.onclick = function(e) {
+
+	e.preventDefault();
+
+	var message = document.querySelector(e.target.hash);
+
+	message.style.display = 'block';
+
+	return false
+
+};
+
+*/
+
+/*
+//6. Zdarzenie DomContentLoaded i load
+
+window.addEventListener('load', function(e){
+
+	var img = document.querySelector('img');
+
+	console.log('Wymiary obrazka to: ', img.offsetWidth + 'x' + img.offsetHeight + 'px');
+
+})
+
+
+
+document.addEventListener('DOMContentLoaded', function(e) {
+	
+	// var h1 = document.querySelector('h1');
+
+	// console.log(h1.textContent);
+
+	var img = document.querySelector('img');
+
+	console.log('Wymiary obrazka to: ', img.offsetWidth + 'x' + img.offsetHeight + 'px');
+
+
+}, false);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
