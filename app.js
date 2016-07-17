@@ -1958,12 +1958,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
 
 
+/* *********************************  DEBUGOWANIE KODU ********************************* */
 
 
+//1. Typy błędów w JavaScript
 
 
-
-
+//2. Debugowanie kodu JavaScript
 
 
 
