@@ -373,7 +373,7 @@
 -->
 
 
-<!-- 72 -->
+<!-- 72 
 
 <!DOCTYPE html>
 <html lang="pl">
@@ -457,9 +457,42 @@
 </body>
 </html>
 
+-->
 
+<!-- 73 -->
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przykład 73 - Praktyczny projekt: Walidacja formularza</title>
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
 
+    <div class="container">
+
+        <h1>Walidacja formularza</h1>
+
+        <form action="#" id="myForm">
+            <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+            <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
+            <select name="your-subject" data-error="Wybierz temat wiadomości">
+                <option value="" disabled selected>- Temat wiadomości -</option>
+                <option value="pytanie">Pytanie</option>
+                <option value="propozycja">Propozycja</option>
+                <option value="support">Support</option>
+            </select>
+            <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości"></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
 
 
 
