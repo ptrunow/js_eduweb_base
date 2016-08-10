@@ -2124,7 +2124,7 @@ for(var i = 0; i < ths.length; i++) {
 
 
 /* **************************  PRAKTYCZNY 3 - WALIDACJA FORMULARZA CZ. 1 i 2 *************************** */
-
+/*
 (function(){
 
 	var form = document.querySelector('#myForm'),
@@ -2238,7 +2238,79 @@ if(errors.length){
 
 })();
 
+*/
 
+/* **************************  PRAKTYCZNY 4 - POWRÓT DO GÓRY STRONY *************************** */
+
+
+(function(){
+
+
+	function createButton() {
+
+		var button = document.createElement('button');
+
+		button.classList.add('backToTop', 'hidden');
+		button.textContent = '^';
+		document.body.appendChild(button);
+
+		return button;
+
+	}
+
+
+	var button = createButton();
+
+
+	function animateScroll() {
+
+		if(document.body.scrollTop > 0) {
+
+			window.scrollBy(0, -5);
+
+			setTimeout(animateScroll, 0.1);
+
+		}
+
+
+	}
+
+
+	button.addEventListener('click', function(e) {
+
+	e.stopPropagation();
+
+	animateScroll();
+
+
+	}, false);
+
+
+
+	window.addEventListener('scroll', function(e) {
+
+		if(document.body.scrollTop >= 200) {
+
+			button.classList.remove('hidden');
+
+		} else {
+
+			button.classList.add('hidden');
+		}
+
+
+
+
+	}, false);
+
+
+
+
+
+
+
+
+})();
 
 
 
