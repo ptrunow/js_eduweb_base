@@ -2306,7 +2306,7 @@ if(errors.length){
 
 /* **************************  PRAKTYCZNY 5 - TOOLTIP *************************** */
 
-
+/*
 (function() {
 
 
@@ -2392,19 +2392,206 @@ if(errors.length){
 
 })();
 
+*/
 
 
+/* **************************  TIPS & TRICKS W JavaScript *************************** */
+
+/* Trick 1 - Konwersja na prawdę/fałsz */
+/*
+var txt = '';
+var b = Bollean(txt);
+
+if(!!txt === false) {
+	console.log('fałsz');
+}
+*/
 
 
+/* Trick 2 - Warunkowe przypisywanie wyrażeń */
+/*
+function sayHello(name) {
+
+	name = name || "Nieznajomy";
+
+//	name = name ? name : 'Nieznajomy';
+
+	alert('Witaj ' + name);
+
+}
+
+sayHello("Tomek");
+*/
 
 
+/* Trick 3 - Generowanie powtarzającego się ciągu znaków */
+/*
+ var text = '';
+
+for(var i = 0; i < 100; i++) {
+
+	text += '-';
+
+}
+
+console.log(text);
+
+var text = (new Array(101)).join('-');
+
+console.log(text); 
+*/
 
 
+/* Trick 4 - Odwrócenie tekstu */
+/*
+var text = 'Uczę się JavaScriptu z Eduweb.pl!';
+var reverse = '';
 
 
+// for(var i = text.length - 1; i >= 0; i--) {
+
+// 	reverse += text[i];
+
+// }
+
+// console.log(reverse);
 
 
+console.log( text.split('').reverse().join(''));
+*/
 
+
+/* Trick 5 - Warunkowe wywoływanie funkcji */
+/*
+function sayHello() {
+	alert('Hello!');
+}
+
+*/
+
+
+/* Trick 6 - Zwracanie wielu wartości z funkcji */
+/*
+function getValues() {
+
+	var obj = {
+		firstName: 'Anna',
+		lastName: 'Kowalska'
+	};
+
+	var id =12331;
+
+	return [obj, id];
+
+}
+
+var values = getValues();
+	data = values[0],
+	id = values[1];
+
+
+console.log(data);
+console.log(id);
+*/
+
+
+/* Trick 7 - Etykietowanie pętli */
+/*
+var people = [
+
+{
+	firstName: 'Maciej',
+	lastName: 'Kowalski',
+	numbers: [47, 49, 26, 96, 13, 1] 
+},
+
+{
+	firstName: 'Maria',
+	lastName: 'Antonik',
+	numbers: [86, 14, 11, 24, 1, 5] 
+},
+
+{
+	firstName: 'Andrzej',
+	lastName: 'Nowak',
+	numbers: [23, 1, 5, 3, 87, 34] 
+},
+
+{
+	firstName: 'Karolina',
+	lastName: 'Długopolska',
+	numbers: [56, 4, 23, 8, 75, 8] 
+},
+
+{
+	firstName: 'Krzysztof',
+	lastName: 'Mariańczyk',
+	numbers: [6, 45, 9, 23, 0, 34] 
+},
+];
+
+
+var has5 = false;
+
+mainLoop: for(var i = 0; i < people.length; i++) {
+
+	var numbers = people[i].numbers;
+
+	for (var j = 0; j < numbers.length; j++) {
+		if(numbers[j] === 5) {
+			has5 = true;
+			console.log(5);
+			break mainLoop;
+		}
+	}
+
+}
+
+console.log(has5);
+*/
+
+
+/* Trick 8 - Przetasowanie tablicy */
+/*
+var arr = [1, 5, 34, 71, 173, 98, 6, 7, 345, 32, 96, 6, 5, 2, 2, 2];
+
+console.log(arr);
+
+arr.sort(function(a, b) {
+
+	var random1 = Math.round( Math.random() * (10 - 1) + 1 ),
+		random2 = Math.round( Math.random() * (10 - 1) + 1 );
+
+		return random1 - random2;
+
+});
+
+console.log(arr);
+*/
+
+
+/* Trick 9 - Powiększenie pierwszej litery tekstu */
+/*
+function capitalize(text) { 
+
+	return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+
+console.log(capitalize('kasia'));
+*/
+
+
+/* Trick 10 - Porównanie dwóch dat */
+/*
+var date1 = new Date(2015, 3, 21),
+	date2 = new Date(2015, 4, 21);
+
+
+console.log( date1.getTime() > date2.getTime() );
+console.log( date1.getTime() < date2.getTime() );
+console.log( date1.getTime() === date2.getTime() );
+*/
 
 
 
